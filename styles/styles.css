@@ -18,7 +18,7 @@ body {
 	position: absolute;
 	right: 1em; 
 }
-.Gmail, .Images, .Login {
+.Gmail, .Images {
 	text-decoration: none;
 	color: #666;
 	font-size: 9.7pt;
@@ -38,6 +38,20 @@ body {
 	top: 5px;
 	height: 15px;
 	width: 15px;
+}
+
+.signin {
+	width: 70px;
+	height: 30px;
+	padding: 3px;
+	background-color: #4285f4;
+	font-family: arial, sans-serif;
+	font-size: 9.5pt;
+	font-weight: bolder;
+	border: 1px solid #4285f4;
+	border-radius: 2px;
+	text-align: center;
+	color: white;
 }
 
 .space1 {
