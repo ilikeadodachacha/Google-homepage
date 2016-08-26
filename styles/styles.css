@@ -1,69 +1,269 @@
+body { 
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	min-width: 57em;
+	height: auto;
+}
 
+.headbar {
+	position: absolute;
+	width: 100%;
+	min-width: 57em;
+	height: 50px;
+}
+
+.menubar {
+	padding-top: 1em;
+	position: absolute;
+	right: 1em; 
+}
+.Gmail, .Images, .Login {
+	text-decoration: none;
+	color: #666;
+	font-size: 9.7pt;
+	font-family: arial, sans-serif;
+}
+
+
+.apps {
+	position: relative;
+	top: 7px;
+	height:	20px;
+	width: 20px;
+}
+
+.notifications {
+	position: relative; 
+	top: 5px;
+	height: 15px;
+	width: 15px;
+}
+
+.space1 {
+	display: inline-block;
+	width: 1em;
+}
+
+.bubbles {
+	position: relative;
+	height: 8em; 
+	width: 35em;
+	margin: auto;
+	top: 5em;
+	z-index: -1;
+}
+
+
+.bubble1{
+	position: absolute;
+	top: 85px;
+	right: 120px;
+	width: 15px;
+	height: 10px;
+	border-radius: 10px / 7px;
+	background-color: #3cba54;
+	animation: bexp1 5s;
+}
+
+@keyframes bexp1 {
+	0% {opacity: 0}
+	10% {opacity: 0}
+	20% {opacity: 0}
+	30% {opacity: 0}
+	40% {opacity: 0}
+	50% {opacity: 0}
+	60% {opacity: 1}
+	100% {opacity: 1}
+}
+
+.bubble2 {
+	position: absolute;
+	top: 70px;
+	right: 100px;
+	width: 20px;
+	height: 14px;
+	border-radius: 10px/7px;
+	background-color: #db3236;
+	animation: bexp2 5s;
+}
+
+@keyframes bexp2 {
+	0% {opacity: 0}
+	10% {opacity: 0}
+	20% {opacity: 0}
+	30% {opacity: 0}
+	40% {opacity: 0}
+	50% {opacity: 0}
+	60% {opacity: 0}
+  70% {opacity: 1}
+	100% {opacity: 1}
+}
+
+.bubble3 {
+	position: absolute;
+	top: 25px;
+	right: 30px;
+	width: 80px;
+	height: 45px;
+	border-radius: 70px/40px;
+	background-color: #4885ed;
+	animation: bexp3 5s;
+}
+
+@keyframes bexp3 {
+	0% {opacity: 0}
+	10% {opacity: 0}
+	20% {opacity: 0}
+	30% {opacity: 0}
+	40% {opacity: 0}
+	50% {opacity: 0}
+	60% {opacity: 0}
+	70% {opacity: 0}
+	80% {opacity: 1}
+	100% {opacity: 1}
+}
+
+.bubble3 p{
+	position: relative;
+	top: 3px;
+	color: white;
+	text-align: center;
+	font-family: arial, sans-serif;
+	font-size: 9pt;
+	font-weight: bold;
+}
 
 .logo {
-	position: absolute;
-	top:	198px;
-	left: 410px;
+	position: relative;
+	width: 17em;
+	height: 5.6em;
+	top: 12.3em;
+	margin: auto; 
+}
+
+.Google{
 	width: 272px;
 }
 
 .formcell {
-	position: absolute;
-	top: 300px;
-	left: 285px;
-	width: 510px;
-	height: 150px;
+	display: block;
+	position: relative;
+	width: 40em;
+	height: 10em;
+	top: 5em;
+	margin: auto;
 }
+
 .searchbar {
+	position: absolute; 
+	display: block;
+	margin-left: 5em;
+	margin-top: 1.4em;
+	height: 36px;
+	width: 481px;
+	border: 1px solid #d6d6d6;
+	font-size: 12pt;
+	font-family: arial, sans-serif;
+	font-weight: bold; 
+}
 
-	position: absolute;
-	height: 35px;
-	width: 488px;
-	top: 20px;
-	left: 16px;
-	border: 1px solid #d9d9d9;
 
+.searchbar:hover{
+	border-color: #a0a0a0;
 }
 
 .microphone {
-	display: block;
 	position: absolute;
-	height: 35px;
-	width: 40px;
-	top: 22px;
-	right: 10px;
-	z-index: +1;
+	display:block;
+	height: 20px;
+	width: 13.9px;
+	top: 2em;
+	right: 5.7em;
 }
 
+
 .search, .lucky {
-	display: block;
+	position: absolute;
 	font-size: 13px;
 	font-family: arial, sans-serif;
 	font-weight: bold;
 	height: 36px;
 	text-align: center;
-	padding: 30px, 30px;
+	padding: 10px;
 	color: #757575;
 	background-color: #f2f2f2;
 	border: 1px solid #f2f2f2;
 	border-radius: 2px;
+	top: 7.2em;
 }
 
 .search {
-	position: absolute;
-	top: 93px;
-	left:	122px;
 	width: 125px;
+	left: 14em;
 }
 
 .lucky {
-	position: absolute;
-	top: 93px;
-	right: 112px;
-	width: 141px;
+	width: 144px;
+	right: 14em;
 }
 
+.search:hover {
+	border-color: #d9d9d9;
+	color: black;
+}
 
+.lucky:hover {
+	border-color: #d9d9d9;
+	color: black;
+}
+
+.footbar {
+	position: absolute;
+	width: 100%;
+	min-width: 57em;
+	margin: auto;
+	bottom: 0;
+	background-color: #f2f2f2;
+	height: 2.5em;
+	border: 1px solid #d9d9d9;
+}
+
+.space2 {
+	display: inline-block;
+	width: 2em;
+}
+
+.foottext1 {
+	position: absolute;
+	display: inline-block;
+	font-family: arial, sans-serif;
+	font-size: 9.7pt;
+	padding: 1em;
+	left: 1em;
+}
+
+.foottext2{
+	position: absolute;
+	display: inline-block;
+	font-family: arial, sans-serif;
+	font-size: 9.7pt;
+	padding:1em;
+	right: 1em;
+}
+
+.foottext1 a{
+	text-decoration: none;
+	color: #666;
+}
+.foottext2 a{
+	text-decoration: none;
+	color: #666;
+}
+
+a:hover {
+	text-decoration: underline;
+}
 
 
 
